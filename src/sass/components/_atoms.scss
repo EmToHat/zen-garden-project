@@ -1,0 +1,79 @@
+@use "../abstracts/index-abstracts" as ia;
+
+//h1, h2, h3, p, ul, li, and a: atoms
+
+a,
+abbr {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: ia.$cyan-clr;
+    font-family: ia.$orbitron-font;
+}
+
+h3 {
+    border-top: solid ia.$dark-blue-clr;
+    width: 90%;
+    margin:auto;
+    padding-block: 2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+h1 {
+    background-color: ia.$dark-blue-clr;
+    font-size: 4rem;
+    padding: 1rem 2.2rem;       
+}
+
+h2 {
+    padding: 5rem 2.2rem 3.6rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+.preamble p, 
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {             
+     @include ia.paragraph-style;    
+}
+
+
+
+ul {
+    margin-inline: 6rem;
+    list-style: none;
+
+    li {
+        margin: 1rem ;
+        font-size: 1.5rem;
+
+        
+        font-family: ia.$advent-font;
+        font-weight: bold;
+    
+        a {
+            display: block;
+            color: ia.$dark-blue-clr;
+        }
+
+        a + a {
+            display: inline;
+        }
+    }
+}
+
+footer {
+    a {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        font-family: ia.$orbitron-font;
+        color: ia.$cyan-clr;
+    }
+}

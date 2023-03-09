@@ -1,0 +1,16 @@
+@use "variables" as v;
+
+//including mixins here
+@mixin paragraph-style {
+    font-size: 1.4rem;
+    margin-inline: 15%;
+    padding: 1.5rem;
+    color: v.$dark-blue-clr;
+    background-color: v.$white-clr;
+    font-family: v.$advent-font;
+    font-weight: 600;
+}
+
+@mixin bottom-sections {
+    margin-bottom: 3.5rem;
+}
