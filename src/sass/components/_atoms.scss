@@ -60,7 +60,7 @@ ul {
     
         a {
             display: block;
-            color: ia.$dark-blue-clr;
+            color: ia.$secondary-color;
         }
 
         a + a {
@@ -74,6 +74,6 @@ footer {
         margin: 0.5rem;
         font-size: 1.5rem;
         font-family: ia.$orbitron-font;
-        color: ia.$cyan-clr;
+        color: ia.$dark-blue-clr;
     }
 }
