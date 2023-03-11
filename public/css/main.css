@@ -11,22 +11,28 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 a,
 abbr {
   text-decoration: none;
 }
 
+a {
+  color: #CE048E;
+}
+
 h1,
 h2 {
-  color: #1CECFF;
   font-family: "Orbitron", sans-serif;
 }
 
-h3 {
+h3, .intro h2 {
   font: 500 3em/1 "Orbitron", sans-serif;
   letter-spacing: 0;
-  padding: 0.25em 0 0.325em;
-  display: block;
   margin: 0 auto;
   text-shadow: 2px 5px #1CECFF, -5px 5px #1A15A8;
   background: url(https://raw.githubusercontent.com/EmToHat/zen-garden-project/main/src/sass/assets/background2.png) repeat-y;
@@ -35,6 +41,21 @@ h3 {
   -webkit-text-fill-color: transparent;
   animation: gradient 80s linear infinite;
   -webkit-animation: gradient 80s linear infinite;
+}
+
+/*SEND H3 TO THE LEFT*/
+.preamble h3,
+.participation h3,
+.requirements h3 {
+  text-align: left;
+  margin: 10px 10px 30px 30px;
+}
+
+/*SEND H3 TO THE RIGHT*/
+.explanation h3,
+.benefits h3 {
+  text-align: right;
+  margin: 20px;
 }
 
 @keyframes gradient {
@@ -54,7 +75,6 @@ h3 {
   }
 }
 h1 {
-  background-color: #1A15A8;
   font-size: 4rem;
   padding: 1rem 2.2rem;
 }
@@ -108,12 +128,11 @@ footer a {
   margin-bottom: 10px;
   width: auto;
   height: auto;
-  border: 2px solid;
   background-image: url("https://raw.githubusercontent.com/EmToHat/zen-garden-project/main/src/sass/assets/future2.jpg");
 }
 
 .intro header h1 {
-  background-image: linear-gradient(-135deg, white 0%, #CE048E 35%, #0785F2 67%, #1CECFF 100%);
+  background-image: linear-gradient(-135deg, #fff 0%, #CE048E 35%, #0785F2 67%, #1CECFF 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -149,7 +168,7 @@ footer a {
   font-weight: bold;
 }
 
-div.page-wrapper {
+.page-wrapper {
   margin-inline: auto;
   text-align: center;
   background-color: #0785F2;

@@ -6,16 +6,16 @@
     margin-bottom: 10px;
     width: auto;
     height: auto;
-    border: 2px solid;
     background-image: url("https://raw.githubusercontent.com/EmToHat/zen-garden-project/main/src/sass/assets/future2.jpg");
   }
+
   .intro header h1 {
     background-image: linear-gradient(
       -135deg,
-      white 0%,
-      #CE048E 35%,
-      #0785F2 67%,
-      #1CECFF 100%
+      ia.$white-clr 0%,
+      ia.$pink-clr 35%,
+      ia.$blue-clr 67%,
+      ia.$cyan-clr 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -50,7 +50,7 @@
     }
 }  
 
-div.page-wrapper {
+.page-wrapper {
     margin-inline: auto;
     text-align: center;
     background-color: ia.$blue-clr;
