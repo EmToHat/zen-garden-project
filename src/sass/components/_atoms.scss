@@ -8,20 +8,47 @@ abbr {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     color: ia.$cyan-clr;
     font-family: ia.$orbitron-font;
 }
 
 h3 {
-    border-top: solid ia.$dark-blue-clr;
-    width: 90%;
-    margin:auto;
-    padding-block: 2rem;
-    font-size: 2.2rem;
-    font-weight: 500;
+    font: 500 3em/1 ia.$orbitron-font;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 2px 5px ia.$cyan-clr, -5px 5px ia.$dark-blue-clr;
+    background: url(https://raw.githubusercontent.com/EmToHat/zen-garden-project/main/src/sass/assets/background2.png) repeat-y;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: gradient 80s linear infinite;
+    -webkit-animation: gradient 80s linear infinite;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 
 h1 {
     background-color: ia.$dark-blue-clr;
@@ -41,7 +68,7 @@ h2 {
 .participation p,
 .benefits p,
 .requirements p {             
-     @include ia.paragraph-style;    
+    @include ia.paragraph-style;    
 }
 
 
@@ -60,7 +87,7 @@ ul {
     
         a {
             display: block;
-            color: ia.$secondary-color;
+            //color: ia.$secondary-color;
         }
 
         a + a {

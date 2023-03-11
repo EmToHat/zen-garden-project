@@ -5,8 +5,10 @@
     font-size: 1.4rem;
     margin-inline: 15%;
     padding: 1.5rem;
-    color: v.$dark-blue-clr;
-    background-color: v.$white-clr;
+    color: v.$white-clr;
+    background-color: v.$black-clr;
+    box-shadow: 10px 10px 5px v.$cyan-clr;
+    //filter: drop-shadow(30px 10px 10px v.$cyan-clr);
     font-family: v.$advent-font;
     font-weight: 600;
 }

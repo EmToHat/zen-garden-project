@@ -1,6 +1,37 @@
 //Header, footer, div classes: molecules
 @use "../abstracts/index-abstracts" as ia;
 
+
+.intro header{
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    background-image: url("https://raw.githubusercontent.com/EmToHat/zen-garden-project/main/src/sass/assets/future2.jpg");
+  }
+  .intro header h1 {
+    background-image: linear-gradient(
+      -135deg,
+      white 0%,
+      #CE048E 35%,
+      #0785F2 67%,
+      #1CECFF 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    font-size: 4rem;
+  }
+
+@keyframes textclip {
+    to {
+      background-position: 100% center;
+    }
+  }
     
 //section .intro 
 //summary class
@@ -22,7 +53,7 @@
 div.page-wrapper {
     margin-inline: auto;
     text-align: center;
-    background-color: ia.$white-clr;
+    background-color: ia.$blue-clr;
 }
 
 //preamble
